@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Items</h2>
+  @if (store.isLoading()) {
+  <div>Loading...</div>
+  } @if(store.items().length) {
+  <ul>
+    @for(item of store.items(); track item.id) {
+    <li>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.createdBy }}</p>
+      <p>Price: ${{ item.createdDate }}</p>
+    </li>
+    }
+  </ul>
+  } @if (store.error()) {
+  <div>{{ error }}</div>
+  }
+</div>
