@@ -1,0 +1,30 @@
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  width: 80rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 4px;
+
+  &:hover {
+    background: #e3f2fd;
+    cursor: pointer;
+  }
+
+  &.selected {
+    border: 2px solid #4688f1;
+    background: #e3f2fd;
+  }
+
+  .color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}

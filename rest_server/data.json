@@ -1,0 +1,804 @@
+{
+  "items": [
+    {
+      "color": "#9e5acb",
+      "id": 1,
+      "name": "Plastic",
+      "createdDate": "13/10/2024",
+      "lastUpdate": "10/08/2024",
+      "createdBy": "Fan Applegarth"
+    },
+    {
+      "color": "#c7c6ff",
+      "id": 2,
+      "name": "Aluminum",
+      "createdDate": "09/08/2024",
+      "lastUpdate": "09/11/2024",
+      "createdBy": "Sven Dybald"
+    },
+    {
+      "color": "#8c97f0",
+      "id": 3,
+      "name": "Steel",
+      "createdDate": "28/04/2024",
+      "lastUpdate": "15/12/2024",
+      "createdBy": "Candide Beau"
+    },
+    {
+      "color": "#7b39a9",
+      "id": 4,
+      "name": "Aluminum",
+      "createdDate": "09/03/2024",
+      "lastUpdate": "29/02/2024",
+      "createdBy": "Emmy Ketchaside"
+    },
+    {
+      "color": "#d8639e",
+      "id": 5,
+      "name": "Plastic",
+      "createdDate": "15/01/2025",
+      "lastUpdate": "03/09/2024",
+      "createdBy": "Gaile Libby"
+    },
+    {
+      "color": "#abadcf",
+      "id": 6,
+      "name": "Plexiglass",
+      "createdDate": "05/04/2024",
+      "lastUpdate": "07/12/2024",
+      "createdBy": "Rozalie Chapling"
+    },
+    {
+      "color": "#1a60be",
+      "id": 7,
+      "name": "Plexiglass",
+      "createdDate": "03/07/2024",
+      "lastUpdate": "18/04/2024",
+      "createdBy": "Reiko Niles"
+    },
+    {
+      "color": "#4d67b4",
+      "id": 8,
+      "name": "Vinyl",
+      "createdDate": "02/05/2024",
+      "lastUpdate": "29/08/2024",
+      "createdBy": "Nicolis Daber"
+    },
+    {
+      "color": "#d91cbb",
+      "id": 9,
+      "name": "Glass",
+      "createdDate": "03/12/2024",
+      "lastUpdate": "17/09/2024",
+      "createdBy": "Evvie Queripel"
+    },
+    {
+      "color": "#25b6a4",
+      "id": 10,
+      "name": "Vinyl",
+      "createdDate": "10/02/2025",
+      "lastUpdate": "17/08/2024",
+      "createdBy": "Damien Brundale"
+    },
+    {
+      "color": "#947808",
+      "id": 11,
+      "name": "Plexiglass",
+      "createdDate": "19/03/2024",
+      "lastUpdate": "06/10/2024",
+      "createdBy": "Neala De'Vere - Hunt"
+    },
+    {
+      "color": "#55aae3",
+      "id": 12,
+      "name": "Brass",
+      "createdDate": "04/02/2025",
+      "lastUpdate": "11/09/2024",
+      "createdBy": "Dillie Thomkins"
+    },
+    {
+      "color": "#e5c536",
+      "id": 13,
+      "name": "Aluminum",
+      "createdDate": "16/09/2024",
+      "lastUpdate": "22/10/2024",
+      "createdBy": "Stafani Thaw"
+    },
+    {
+      "color": "#02c9fb",
+      "id": 14,
+      "name": "Granite",
+      "createdDate": "18/05/2024",
+      "lastUpdate": "16/04/2024",
+      "createdBy": "Duane Dudman"
+    },
+    {
+      "color": "#3ebfe8",
+      "id": 15,
+      "name": "Aluminum",
+      "createdDate": "11/12/2024",
+      "lastUpdate": "04/10/2024",
+      "createdBy": "Matthiew Keywood"
+    },
+    {
+      "color": "#9406cf",
+      "id": 16,
+      "name": "Vinyl",
+      "createdDate": "25/03/2024",
+      "lastUpdate": "11/07/2024",
+      "createdBy": "Drusilla Roo"
+    },
+    {
+      "color": "#565815",
+      "id": 17,
+      "name": "Stone",
+      "createdDate": "13/12/2024",
+      "lastUpdate": "03/02/2025",
+      "createdBy": "Gloriane Mattsson"
+    },
+    {
+      "color": "#deeaf5",
+      "id": 18,
+      "name": "Plastic",
+      "createdDate": "18/04/2024",
+      "lastUpdate": "17/02/2025",
+      "createdBy": "Bond Risborough"
+    },
+    {
+      "color": "#240499",
+      "id": 19,
+      "name": "Plastic",
+      "createdDate": "25/01/2025",
+      "lastUpdate": "28/08/2024",
+      "createdBy": "Erasmus Lydden"
+    },
+    {
+      "color": "#1cfe11",
+      "id": 20,
+      "name": "Steel",
+      "createdDate": "12/10/2024",
+      "lastUpdate": "04/03/2024",
+      "createdBy": "Virgil Vyse"
+    },
+    {
+      "color": "#5c6cc8",
+      "id": 21,
+      "name": "Aluminum",
+      "createdDate": "09/01/2025",
+      "lastUpdate": "13/04/2024",
+      "createdBy": "Hal Sharpe"
+    },
+    {
+      "color": "#439997",
+      "id": 22,
+      "name": "Wood",
+      "createdDate": "18/01/2025",
+      "lastUpdate": "15/06/2024",
+      "createdBy": "Brooke Dymock"
+    },
+    {
+      "color": "#36f0ec",
+      "id": 23,
+      "name": "Steel",
+      "createdDate": "14/11/2024",
+      "lastUpdate": "03/11/2024",
+      "createdBy": "Gibb Byk"
+    },
+    {
+      "color": "#1801f8",
+      "id": 24,
+      "name": "Glass",
+      "createdDate": "02/11/2024",
+      "lastUpdate": "07/07/2024",
+      "createdBy": "Ronnie Harry"
+    },
+    {
+      "color": "#bff0dc",
+      "id": 25,
+      "name": "Steel",
+      "createdDate": "29/12/2024",
+      "lastUpdate": "28/06/2024",
+      "createdBy": "Lorie Orans"
+    },
+    {
+      "color": "#f12ffb",
+      "id": 26,
+      "name": "Steel",
+      "createdDate": "07/03/2024",
+      "lastUpdate": "07/11/2024",
+      "createdBy": "Marrissa Ticic"
+    },
+    {
+      "color": "#e327d9",
+      "id": 27,
+      "name": "Plexiglass",
+      "createdDate": "03/02/2025",
+      "lastUpdate": "17/02/2025",
+      "createdBy": "Reade Leach"
+    },
+    {
+      "color": "#1c2a82",
+      "id": 28,
+      "name": "Vinyl",
+      "createdDate": "14/01/2025",
+      "lastUpdate": "03/04/2024",
+      "createdBy": "Giustino Gronou"
+    },
+    {
+      "color": "#38dceb",
+      "id": 29,
+      "name": "Rubber",
+      "createdDate": "18/02/2025",
+      "lastUpdate": "08/02/2025",
+      "createdBy": "Genia Persey"
+    },
+    {
+      "color": "#7bd46e",
+      "id": 30,
+      "name": "Glass",
+      "createdDate": "24/10/2024",
+      "lastUpdate": "03/06/2024",
+      "createdBy": "Hercules Sappell"
+    },
+    {
+      "color": "#5bd1ec",
+      "id": 31,
+      "name": "Aluminum",
+      "createdDate": "11/10/2024",
+      "lastUpdate": "20/08/2024",
+      "createdBy": "Oralie Seignior"
+    },
+    {
+      "color": "#9084bd",
+      "id": 32,
+      "name": "Plexiglass",
+      "createdDate": "22/09/2024",
+      "lastUpdate": "09/08/2024",
+      "createdBy": "Hayward Walczak"
+    },
+    {
+      "color": "#203534",
+      "id": 33,
+      "name": "Plexiglass",
+      "createdDate": "11/12/2024",
+      "lastUpdate": "09/07/2024",
+      "createdBy": "Heinrick Paulsen"
+    },
+    {
+      "color": "#3d8b96",
+      "id": 34,
+      "name": "Aluminum",
+      "createdDate": "08/12/2024",
+      "lastUpdate": "31/07/2024",
+      "createdBy": "Will Mongan"
+    },
+    {
+      "color": "#3dfb3e",
+      "id": 35,
+      "name": "Aluminum",
+      "createdDate": "10/09/2024",
+      "lastUpdate": "15/05/2024",
+      "createdBy": "Gawen Parriss"
+    },
+    {
+      "color": "#b5ba80",
+      "id": 36,
+      "name": "Plastic",
+      "createdDate": "20/07/2024",
+      "lastUpdate": "10/12/2024",
+      "createdBy": "Bernelle Ronchi"
+    },
+    {
+      "color": "#b52ac0",
+      "id": 37,
+      "name": "Wood",
+      "createdDate": "10/02/2025",
+      "lastUpdate": "27/09/2024",
+      "createdBy": "Ryun Glencross"
+    },
+    {
+      "color": "#903cf0",
+      "id": 38,
+      "name": "Aluminum",
+      "createdDate": "10/01/2025",
+      "lastUpdate": "07/02/2025",
+      "createdBy": "Clemmy Geroldini"
+    },
+    {
+      "color": "#5b839b",
+      "id": 39,
+      "name": "Steel",
+      "createdDate": "19/08/2024",
+      "lastUpdate": "27/02/2024",
+      "createdBy": "Curr Kesper"
+    },
+    {
+      "color": "#7f9b22",
+      "id": 40,
+      "name": "Vinyl",
+      "createdDate": "01/07/2024",
+      "lastUpdate": "12/01/2025",
+      "createdBy": "Lester Bulward"
+    },
+    {
+      "color": "#287dcd",
+      "id": 41,
+      "name": "Stone",
+      "createdDate": "14/07/2024",
+      "lastUpdate": "28/05/2024",
+      "createdBy": "Brittney Terese"
+    },
+    {
+      "color": "#7e33f4",
+      "id": 42,
+      "name": "Rubber",
+      "createdDate": "20/01/2025",
+      "lastUpdate": "20/07/2024",
+      "createdBy": "Patrizia Mucklow"
+    },
+    {
+      "color": "#5cc716",
+      "id": 43,
+      "name": "Granite",
+      "createdDate": "31/07/2024",
+      "lastUpdate": "03/04/2024",
+      "createdBy": "Sonnie Moppett"
+    },
+    {
+      "color": "#d39cd8",
+      "id": 44,
+      "name": "Wood",
+      "createdDate": "19/04/2024",
+      "lastUpdate": "24/01/2025",
+      "createdBy": "Kevina Cursons"
+    },
+    {
+      "color": "#9fd4ff",
+      "id": 45,
+      "name": "Aluminum",
+      "createdDate": "27/08/2024",
+      "lastUpdate": "04/11/2024",
+      "createdBy": "Kearney Peggs"
+    },
+    {
+      "color": "#5e23e0",
+      "id": 46,
+      "name": "Aluminum",
+      "createdDate": "30/07/2024",
+      "lastUpdate": "12/03/2024",
+      "createdBy": "Marie-jeanne Readshall"
+    },
+    {
+      "color": "#779603",
+      "id": 47,
+      "name": "Steel",
+      "createdDate": "25/03/2024",
+      "lastUpdate": "27/07/2024",
+      "createdBy": "Liuka Teodori"
+    },
+    {
+      "color": "#0cde99",
+      "id": 48,
+      "name": "Steel",
+      "createdDate": "05/05/2024",
+      "lastUpdate": "19/08/2024",
+      "createdBy": "Derrik Cromblehome"
+    },
+    {
+      "color": "#b635d1",
+      "id": 49,
+      "name": "Rubber",
+      "createdDate": "26/04/2024",
+      "lastUpdate": "09/01/2025",
+      "createdBy": "Ange Ogilvie"
+    },
+    {
+      "color": "#5803b0",
+      "id": 50,
+      "name": "Plexiglass",
+      "createdDate": "14/07/2024",
+      "lastUpdate": "23/03/2024",
+      "createdBy": "Hurley Hallybone"
+    },
+    {
+      "color": "#6cafc8",
+      "id": 51,
+      "name": "Vinyl",
+      "createdDate": "08/11/2024",
+      "lastUpdate": "11/04/2024",
+      "createdBy": "Elihu Micah"
+    },
+    {
+      "color": "#9484ca",
+      "id": 52,
+      "name": "Vinyl",
+      "createdDate": "11/11/2024",
+      "lastUpdate": "12/04/2024",
+      "createdBy": "Ber Sandry"
+    },
+    {
+      "color": "#6aca51",
+      "id": 53,
+      "name": "Steel",
+      "createdDate": "27/05/2024",
+      "lastUpdate": "05/05/2024",
+      "createdBy": "Krispin Davidson"
+    },
+    {
+      "color": "#24e81b",
+      "id": 54,
+      "name": "Aluminum",
+      "createdDate": "04/10/2024",
+      "lastUpdate": "15/12/2024",
+      "createdBy": "Melitta Winridge"
+    },
+    {
+      "color": "#7cb7d3",
+      "id": 55,
+      "name": "Glass",
+      "createdDate": "29/08/2024",
+      "lastUpdate": "21/04/2024",
+      "createdBy": "Kendrick Jedrzej"
+    },
+    {
+      "color": "#80694a",
+      "id": 56,
+      "name": "Aluminum",
+      "createdDate": "18/01/2025",
+      "lastUpdate": "11/03/2024",
+      "createdBy": "Hallsy Fleetwood"
+    },
+    {
+      "color": "#dfc149",
+      "id": 57,
+      "name": "Wood",
+      "createdDate": "24/06/2024",
+      "lastUpdate": "29/06/2024",
+      "createdBy": "Elisha Jablonski"
+    },
+    {
+      "color": "#28f9f2",
+      "id": 58,
+      "name": "Stone",
+      "createdDate": "15/01/2025",
+      "lastUpdate": "22/02/2025",
+      "createdBy": "Shena McClurg"
+    },
+    {
+      "color": "#e2f9de",
+      "id": 59,
+      "name": "Granite",
+      "createdDate": "28/11/2024",
+      "lastUpdate": "06/03/2024",
+      "createdBy": "Marlee Syfax"
+    },
+    {
+      "color": "#8bbf19",
+      "id": 60,
+      "name": "Vinyl",
+      "createdDate": "03/07/2024",
+      "lastUpdate": "22/12/2024",
+      "createdBy": "Dael Novis"
+    },
+    {
+      "color": "#7521b0",
+      "id": 61,
+      "name": "Plastic",
+      "createdDate": "23/12/2024",
+      "lastUpdate": "12/06/2024",
+      "createdBy": "Katharyn Brackstone"
+    },
+    {
+      "color": "#69cd93",
+      "id": 62,
+      "name": "Stone",
+      "createdDate": "28/02/2024",
+      "lastUpdate": "13/06/2024",
+      "createdBy": "Sarah Rochester"
+    },
+    {
+      "color": "#13e884",
+      "id": 63,
+      "name": "Plexiglass",
+      "createdDate": "10/11/2024",
+      "lastUpdate": "17/04/2024",
+      "createdBy": "Ophelia Klyner"
+    },
+    {
+      "color": "#e422ff",
+      "id": 64,
+      "name": "Wood",
+      "createdDate": "07/09/2024",
+      "lastUpdate": "17/03/2024",
+      "createdBy": "Althea Snape"
+    },
+    {
+      "color": "#358bc6",
+      "id": 65,
+      "name": "Plexiglass",
+      "createdDate": "08/12/2024",
+      "lastUpdate": "27/03/2024",
+      "createdBy": "Nixie Chetham"
+    },
+    {
+      "color": "#4b46ec",
+      "id": 66,
+      "name": "Steel",
+      "createdDate": "20/10/2024",
+      "lastUpdate": "10/04/2024",
+      "createdBy": "Annabela De Gowe"
+    },
+    {
+      "color": "#708d6d",
+      "id": 67,
+      "name": "Plexiglass",
+      "createdDate": "15/10/2024",
+      "lastUpdate": "29/09/2024",
+      "createdBy": "Solomon Woltering"
+    },
+    {
+      "color": "#78b08c",
+      "id": 68,
+      "name": "Wood",
+      "createdDate": "08/03/2024",
+      "lastUpdate": "16/06/2024",
+      "createdBy": "Jeth Ivanenko"
+    },
+    {
+      "color": "#6e9c4b",
+      "id": 69,
+      "name": "Steel",
+      "createdDate": "27/07/2024",
+      "lastUpdate": "28/12/2024",
+      "createdBy": "Sheffy Kleehuhler"
+    },
+    {
+      "color": "#7d495b",
+      "id": 70,
+      "name": "Wood",
+      "createdDate": "22/04/2024",
+      "lastUpdate": "12/01/2025",
+      "createdBy": "Rickey Schule"
+    },
+    {
+      "color": "#f50cd2",
+      "id": 71,
+      "name": "Wood",
+      "createdDate": "04/01/2025",
+      "lastUpdate": "12/07/2024",
+      "createdBy": "Abraham Lomond"
+    },
+    {
+      "color": "#1d139a",
+      "id": 72,
+      "name": "Vinyl",
+      "createdDate": "01/10/2024",
+      "lastUpdate": "30/09/2024",
+      "createdBy": "Sharyl Kissack"
+    },
+    {
+      "color": "#3824df",
+      "id": 73,
+      "name": "Plexiglass",
+      "createdDate": "22/02/2025",
+      "lastUpdate": "30/11/2024",
+      "createdBy": "Amerigo Lowton"
+    },
+    {
+      "color": "#c7a340",
+      "id": 74,
+      "name": "Vinyl",
+      "createdDate": "07/10/2024",
+      "lastUpdate": "17/12/2024",
+      "createdBy": "Jeff Godar"
+    },
+    {
+      "color": "#d14c3a",
+      "id": 75,
+      "name": "Wood",
+      "createdDate": "02/04/2024",
+      "lastUpdate": "01/07/2024",
+      "createdBy": "Isa Weinmann"
+    },
+    {
+      "color": "#b8f899",
+      "id": 76,
+      "name": "Plastic",
+      "createdDate": "27/05/2024",
+      "lastUpdate": "09/09/2024",
+      "createdBy": "Grove Babb"
+    },
+    {
+      "color": "#0f9fd6",
+      "id": 77,
+      "name": "Stone",
+      "createdDate": "24/02/2025",
+      "lastUpdate": "25/06/2024",
+      "createdBy": "Morty Berrycloth"
+    },
+    {
+      "color": "#a005b1",
+      "id": 78,
+      "name": "Plastic",
+      "createdDate": "20/03/2024",
+      "lastUpdate": "19/04/2024",
+      "createdBy": "Garik Garvagh"
+    },
+    {
+      "color": "#a7ecc2",
+      "id": 79,
+      "name": "Steel",
+      "createdDate": "13/08/2024",
+      "lastUpdate": "06/09/2024",
+      "createdBy": "Anissa Alexandrescu"
+    },
+    {
+      "color": "#e83207",
+      "id": 80,
+      "name": "Glass",
+      "createdDate": "27/12/2024",
+      "lastUpdate": "31/10/2024",
+      "createdBy": "Mufi Deaves"
+    },
+    {
+      "color": "#73a5c8",
+      "id": 81,
+      "name": "Rubber",
+      "createdDate": "29/01/2025",
+      "lastUpdate": "03/04/2024",
+      "createdBy": "Norean Casper"
+    },
+    {
+      "color": "#4e1a11",
+      "id": 82,
+      "name": "Wood",
+      "createdDate": "05/06/2024",
+      "lastUpdate": "03/03/2024",
+      "createdBy": "Bonni Sherel"
+    },
+    {
+      "color": "#b7cbb5",
+      "id": 83,
+      "name": "Rubber",
+      "createdDate": "22/12/2024",
+      "lastUpdate": "17/07/2024",
+      "createdBy": "Valentin Brodnecke"
+    },
+    {
+      "color": "#193581",
+      "id": 84,
+      "name": "Rubber",
+      "createdDate": "21/09/2024",
+      "lastUpdate": "20/11/2024",
+      "createdBy": "Katherina Senett"
+    },
+    {
+      "color": "#644c62",
+      "id": 85,
+      "name": "Glass",
+      "createdDate": "12/09/2024",
+      "lastUpdate": "05/08/2024",
+      "createdBy": "Beck Umbert"
+    },
+    {
+      "color": "#14b8a5",
+      "id": 86,
+      "name": "Wood",
+      "createdDate": "07/11/2024",
+      "lastUpdate": "28/12/2024",
+      "createdBy": "Ameline Keenleyside"
+    },
+    {
+      "color": "#08c47b",
+      "id": 87,
+      "name": "Vinyl",
+      "createdDate": "13/04/2024",
+      "lastUpdate": "21/05/2024",
+      "createdBy": "Rufe O'Fallone"
+    },
+    {
+      "color": "#027a90",
+      "id": 88,
+      "name": "Granite",
+      "createdDate": "27/11/2024",
+      "lastUpdate": "21/04/2024",
+      "createdBy": "Frans Twelvetrees"
+    },
+    {
+      "color": "#5a4b7f",
+      "id": 89,
+      "name": "Plexiglass",
+      "createdDate": "04/05/2024",
+      "lastUpdate": "23/03/2024",
+      "createdBy": "Davidde Dumberell"
+    },
+    {
+      "color": "#1eae73",
+      "id": 90,
+      "name": "Glass",
+      "createdDate": "02/10/2024",
+      "lastUpdate": "08/05/2024",
+      "createdBy": "Nessa Wolters"
+    },
+    {
+      "color": "#24da07",
+      "id": 91,
+      "name": "Steel",
+      "createdDate": "05/09/2024",
+      "lastUpdate": "03/12/2024",
+      "createdBy": "Alyse Chalfain"
+    },
+    {
+      "color": "#9f554c",
+      "id": 92,
+      "name": "Steel",
+      "createdDate": "05/12/2024",
+      "lastUpdate": "30/03/2024",
+      "createdBy": "Shepherd Keppin"
+    },
+    {
+      "color": "#b56172",
+      "id": 93,
+      "name": "Aluminum",
+      "createdDate": "02/02/2025",
+      "lastUpdate": "13/05/2024",
+      "createdBy": "Barbra Pendlenton"
+    },
+    {
+      "color": "#f45d2f",
+      "id": 94,
+      "name": "Glass",
+      "createdDate": "31/07/2024",
+      "lastUpdate": "31/01/2025",
+      "createdBy": "Toiboid Suddards"
+    },
+    {
+      "color": "#78c5e0",
+      "id": 95,
+      "name": "Wood",
+      "createdDate": "09/02/2025",
+      "lastUpdate": "28/04/2024",
+      "createdBy": "Madge Purdey"
+    },
+    {
+      "color": "#9638cb",
+      "id": 96,
+      "name": "Aluminum",
+      "createdDate": "24/02/2025",
+      "lastUpdate": "28/01/2025",
+      "createdBy": "Clementius Horrod"
+    },
+    {
+      "color": "#786433",
+      "id": 97,
+      "name": "Granite",
+      "createdDate": "13/02/2025",
+      "lastUpdate": "29/09/2024",
+      "createdBy": "Bogey Clibbery"
+    },
+    {
+      "color": "#738169",
+      "id": 98,
+      "name": "Aluminum",
+      "createdDate": "29/05/2024",
+      "lastUpdate": "26/02/2025",
+      "createdBy": "Kirstin Siehard"
+    },
+    {
+      "color": "#4967eb",
+      "id": 99,
+      "name": "Plastic",
+      "createdDate": "08/11/2024",
+      "lastUpdate": "30/09/2024",
+      "createdBy": "Nicolais Whipple"
+    },
+    {
+      "color": "#ef4a1a",
+      "id": 100,
+      "name": "Rubber",
+      "createdDate": "11/03/2024",
+      "lastUpdate": "28/01/2025",
+      "createdBy": "Barbabas Rimington"
+    }
+  ]
+}

@@ -15,7 +15,7 @@ export interface MaterialsListState {
 })
 export class MaterialsService {
   private http = inject(HttpClient);
-  private apiUrl = 'mock-data.json';
+  private apiUrl = 'http://localhost:3000/items';
 
   private state = signal<MaterialsListState>({
     items: [],

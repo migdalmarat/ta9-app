@@ -50,7 +50,71 @@ export const MaterialsStore = signalStore(
             tapResponse<MaterialItem[]>({
               next: (items) => patchState(store, { items, isLoading: false }),
               error: (err) => {
-                patchState(store, { isLoading: false });
+                const errorMessage =
+                  err instanceof Error ? err.message : String(err);
+                patchState(store, { isLoading: false, error: errorMessage });
+                console.error(err);
+              },
+            })
+          );
+        })
+      )
+    ),
+    addItem: rxMethod<MaterialItem>(
+      pipe(
+        switchMap((item) => {
+          return materialsService.addItem(item).pipe(
+            tapResponse<MaterialItem>({
+              next: (item) =>
+                patchState(store, {
+                  items: [...store.items(), item],
+                }),
+              error: (err) => {
+                const errorMessage =
+                  err instanceof Error ? err.message : String(err);
+                patchState(store, { error: errorMessage });
+                console.error(err);
+              },
+            })
+          );
+        })
+      )
+    ),
+    updateItem: rxMethod<MaterialItem>(
+      pipe(
+        switchMap((updatedItem) => {
+          return materialsService.updateItem(updatedItem).pipe(
+            tapResponse<MaterialItem>({
+              next: (updatedItem) =>
+                patchState(store, {
+                  items: store
+                    .items()
+                    .map((i) => (i.id === updatedItem.id ? updatedItem : i)),
+                }),
+              error: (err) => {
+                const errorMessage =
+                  err instanceof Error ? err.message : String(err);
+                patchState(store, { error: errorMessage });
+                console.error(err);
+              },
+            })
+          );
+        })
+      )
+    ),
+    deleteItem: rxMethod<number>(
+      pipe(
+        switchMap((id) => {
+          return materialsService.deleteItem(id).pipe(
+            tapResponse<void>({
+              next: () =>
+                patchState(store, {
+                  items: store.items().filter((item) => item.id !== id),
+                }),
+              error: (err) => {
+                const errorMessage =
+                  err instanceof Error ? err.message : String(err);
+                patchState(store, { error: errorMessage });
                 console.error(err);
               },
             })

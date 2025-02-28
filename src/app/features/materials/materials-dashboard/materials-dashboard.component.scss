@@ -1,0 +1,9 @@
+@import "../../../../assets/styles/base";
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3rem 7rem;
+  background-color: var(--color-grey-light);
+}
