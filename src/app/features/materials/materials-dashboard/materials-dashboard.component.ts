@@ -54,13 +54,13 @@ export class MaterialsDashboardComponent implements OnInit {
     const dialogRef = this.dialog.open(MaterialsDialogComponent, {});
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log('The dialog was closed');
       if (result !== undefined) {
         this.store.addItem(result);
       }
     });
   }
-  setViewMode(arg0: string) {
+
+  setViewMode(view: string) {
     throw new Error('Method not implemented.');
   }
 }

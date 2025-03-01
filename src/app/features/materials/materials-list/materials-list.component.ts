@@ -16,6 +16,8 @@ import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MaterialItem } from '../../../models/material-item';
 import { HighlightDirective } from '../../../directives/highlight.directive';
+import { MatDialog } from '@angular/material/dialog';
+import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.component';
 
 @Component({
   selector: 'app-material-list',
@@ -35,6 +37,7 @@ import { HighlightDirective } from '../../../directives/highlight.directive';
 })
 export class MaterialListComponent implements OnInit, AfterViewInit {
   readonly store = inject(MaterialsStore);
+  readonly dialog = inject(MatDialog);
 
   displayedColumns: string[] = [
     'color',
@@ -71,5 +74,17 @@ export class MaterialListComponent implements OnInit, AfterViewInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  onRowClick(rowData: any) {
+    const dialogRef = this.dialog.open(MaterialsDialogComponent, {
+      data: rowData,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result !== undefined) {
+        this.store.addItem(result);
+      }
+    });
   }
 }

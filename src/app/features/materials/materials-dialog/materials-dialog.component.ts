@@ -45,11 +45,22 @@ export class MaterialsDialogComponent implements OnInit {
   }
 
   initForm(): void {
-    this.form = this.fb.group({
-      name: ['', [Validators.required]],
-      color: ['#000000', Validators.required],
-      tagDescription: ['', [Validators.required]],
-    });
+    if (this.data) {
+      this.form = this.fb.group({
+        name: [this.data.name, [Validators.required]],
+        color: [this.data.color, Validators.required],
+        tagDescription: [
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          [Validators.required],
+        ],
+      });
+    } else {
+      this.form = this.fb.group({
+        name: ['', [Validators.required]],
+        color: ['#000000', Validators.required],
+        tagDescription: ['', [Validators.required]],
+      });
+    }
   }
 
   get f() {
@@ -60,6 +71,14 @@ export class MaterialsDialogComponent implements OnInit {
     this.submitted = true;
 
     if (this.form.invalid) {
+      return;
+    }
+
+    if (this.data) {
+      this.newItem = { ...this.data, ...this.form.value };
+      this.newItem.lastUpdate = new Date();
+      this.store.updateItem(this.newItem);
+      this.dialogRef.close();
       return;
     }
     const date = new Date();
