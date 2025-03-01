@@ -15,6 +15,7 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MaterialItem } from '../../../models/material-item';
+import { HighlightDirective } from '../../../directives/highlight.directive';
 
 @Component({
   selector: 'app-material-list',
@@ -29,6 +30,7 @@ import { MaterialItem } from '../../../models/material-item';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    HighlightDirective,
   ],
 })
 export class MaterialListComponent implements OnInit, AfterViewInit {

@@ -1,40 +1,29 @@
 <div class="app-container">
   <div class="url-container">
     <input type="text" class="url-input" placeholder="URL" />
-    <button class="go-button">GO</button>
+    <button mat-flat-button class="go-button">GO</button>
   </div>
 
   <div class="content-container">
     <div class="header">
       <h2 class="title">Management Tool</h2>
-      <div class="search-container">
-        <div class="search-input-wrapper">
-          <i class="search-icon">🔍</i>
-          <input
-            type="text"
-            class="search-input"
-            placeholder="Find by name..."
-            (input)="onSearch()"
-          />
-        </div>
-      </div>
       <div class="view-controls">
         <button
           class="view-button grid-view-button"
           [class.active]="viewMode === 'grid'"
           (click)="setViewMode('grid')"
         >
-          <i class="grid-icon">⊞</i>
+          <mat-icon svgIcon="tiles-mode"></mat-icon>
         </button>
         <button
           class="view-button list-view-button"
           [class.active]="viewMode === 'list'"
           (click)="setViewMode('list')"
         >
-          <i class="list-icon">≡</i>
+          <mat-icon svgIcon="list-mode"></mat-icon>
         </button>
         <button class="add-button" (click)="openCreateModal()">
-          <i class="add-icon">+</i>
+          <mat-icon svgIcon="add-new"></mat-icon>
         </button>
       </div>
     </div>
