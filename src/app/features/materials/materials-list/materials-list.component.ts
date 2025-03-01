@@ -15,12 +15,11 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MaterialItem } from '../../../models/material-item';
-import { HighlightDirective } from '../../../directives/highlight.directive';
 import { MatDialog } from '@angular/material/dialog';
 import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.component';
 
 @Component({
-  selector: 'app-material-list',
+  selector: 'app-materials-list',
   templateUrl: './materials-list.component.html',
   styleUrls: ['./materials-list.component.scss'],
   standalone: true,
@@ -32,7 +31,6 @@ import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.c
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    HighlightDirective,
   ],
 })
 export class MaterialListComponent implements OnInit, AfterViewInit {
@@ -53,7 +51,9 @@ export class MaterialListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor() {
-    this.store.loadItems();
+    if (this.store.items().length === 0) {
+      this.store.loadItems();
+    }
 
     effect(() => {
       this.dataSource.data = this.store.items();

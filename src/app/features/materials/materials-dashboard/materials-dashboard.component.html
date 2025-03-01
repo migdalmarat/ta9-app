@@ -30,18 +30,9 @@
 
     <div class="view-container">
       @if(viewMode === 'list') {
-      <app-material-list></app-material-list>
-
-      <!-- <app-list-view 
-          *ngIf="viewMode === 'list'" 
-          [items]="items"
-        ></app-list-view> -->
-      } @else {
-      <!-- <app-grid-view 
-          *ngIf="viewMode === 'grid'" 
-          [items]="items"
-          (itemSelected)="onItemSelected($event)"
-        ></app-grid-view> -->
+      <app-materials-list></app-materials-list>
+      } @if (viewMode === 'grid') {
+      <app-materials-grid></app-materials-grid>
       }
     </div>
   </div>

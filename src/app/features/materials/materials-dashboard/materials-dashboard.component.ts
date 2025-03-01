@@ -13,12 +13,18 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { MatDialog } from '@angular/material/dialog';
 import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.component';
 import { MaterialsStore } from '../materials.store';
+import { MaterialsGridComponent } from '../materials-grid/materials-grid.component';
 
 @Component({
   selector: 'app-materials-dashboard',
   templateUrl: './materials-dashboard.component.html',
   styleUrls: ['./materials-dashboard.component.scss'],
-  imports: [MaterialListComponent, MatButtonModule, MatIconModule],
+  imports: [
+    MaterialListComponent,
+    MaterialsGridComponent,
+    MatButtonModule,
+    MatIconModule,
+  ],
 })
 export class MaterialsDashboardComponent implements OnInit {
   readonly store = inject(MaterialsStore);
@@ -61,6 +67,6 @@ export class MaterialsDashboardComponent implements OnInit {
   }
 
   setViewMode(view: string) {
-    throw new Error('Method not implemented.');
+    this.viewMode = view as 'list' | 'grid';
   }
 }
