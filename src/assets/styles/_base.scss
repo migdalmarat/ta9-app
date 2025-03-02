@@ -3,6 +3,7 @@
   --color-blue: #007af9;
   --color-grey: #797979;
   --color-grey-light: #f6f9fa;
+  --color-grey-light-2: #f6f1f1;
   --color-black: #000000;
   --color-dark-blue: #0e4f6e;
 
@@ -58,75 +59,8 @@ body {
   font-family: var(--font-family-roboto);
   font-weight: 400;
   line-height: 1.6;
-  color: var(--color-grey-dark-2);
-  background-image: linear-gradient(
-    to right bottom,
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: var(--color-grey);
+  background-color: var(--color-grey);
 
   min-height: 100vh;
-}
-
-/* Character Styles */
-.character-style-1 {
-  font-family: var(--font-family-roboto);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-300);
-  font-size: var(--font-size-20);
-  line-height: var(--line-spacing-24);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-}
-
-.character-style-2 {
-  font-family: var(--font-family-roboto);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-20);
-  line-height: var(--line-spacing-25);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-007af9);
-}
-
-.character-style-3 {
-  font-family: var(--font-family-roboto);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-300);
-  font-size: var(--font-size-20);
-  line-height: var(--line-spacing-24);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-797979);
-}
-
-.character-style-4 {
-  font-family: var(--font-family-roboto);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-16);
-  line-height: var(--line-spacing-18);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-}
-
-.character-style-5 {
-  font-family: var(--font-family-roboto);
-  font-style: var(--font-style-italic);
-  font-weight: var(--font-weight-100);
-  font-size: var(--font-size-18);
-  line-height: var(--line-spacing-22);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-000000);
-}
-
-.character-style-6 {
-  font-family: var(--font-family-roboto);
-  font-style: var(--font-style-normal);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-20);
-  line-height: var(--line-spacing-25);
-  letter-spacing: var(--character-spacing-0);
-  color: var(--color-0e4f6e);
 }

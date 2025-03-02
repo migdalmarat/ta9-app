@@ -1,10 +1,8 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   effect,
   inject,
-  OnInit,
   ViewChild,
 } from '@angular/core';
 import { MaterialsStore } from '../materials.store';
@@ -33,7 +31,7 @@ import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.c
     MatPaginatorModule,
   ],
 })
-export class MaterialListComponent implements OnInit, AfterViewInit {
+export class MaterialListComponent {
   readonly store = inject(MaterialsStore);
   readonly dialog = inject(MatDialog);
 
@@ -59,8 +57,6 @@ export class MaterialListComponent implements OnInit, AfterViewInit {
       this.dataSource.data = this.store.items();
     });
   }
-
-  ngOnInit(): void {}
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;

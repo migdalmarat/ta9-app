@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MaterialsStore } from '../materials.store';
 import { MatDialog } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
@@ -10,7 +10,7 @@ import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.c
   styleUrls: ['./materials-grid.component.scss'],
   imports: [MatCardModule],
 })
-export class MaterialsGridComponent implements OnInit {
+export class MaterialsGridComponent {
   readonly store = inject(MaterialsStore);
   readonly dialog = inject(MatDialog);
   constructor() {
@@ -18,8 +18,6 @@ export class MaterialsGridComponent implements OnInit {
       this.store.loadItems();
     }
   }
-
-  ngOnInit() {}
 
   selectCard(item: any): void {
     const dialogRef = this.dialog.open(MaterialsDialogComponent, {
