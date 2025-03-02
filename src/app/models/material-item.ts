@@ -2,7 +2,7 @@ export interface MaterialItem {
   color: string;
   id: number;
   name: string;
-  createdDate: Date;
-  lastUpdate: Date;
+  createdDate: string;
+  lastUpdate: string;
   createdBy: string;
 }
