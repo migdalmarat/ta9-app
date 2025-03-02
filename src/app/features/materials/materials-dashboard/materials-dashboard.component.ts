@@ -1,4 +1,5 @@
 import {
+  ChangeDetectionStrategy,
   Component,
   inject,
   model,
@@ -19,6 +20,8 @@ import { MaterialsGridComponent } from '../materials-grid/materials-grid.compone
   selector: 'app-materials-dashboard',
   templateUrl: './materials-dashboard.component.html',
   styleUrls: ['./materials-dashboard.component.scss'],
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     MaterialListComponent,
     MaterialsGridComponent,

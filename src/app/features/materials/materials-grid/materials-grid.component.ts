@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { MaterialsStore } from '../materials.store';
 import { MatDialog } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
@@ -9,6 +9,8 @@ import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.c
   templateUrl: './materials-grid.component.html',
   styleUrls: ['./materials-grid.component.scss'],
   imports: [MatCardModule],
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MaterialsGridComponent {
   readonly store = inject(MaterialsStore);
