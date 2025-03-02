@@ -1,4 +1,4 @@
-import { Component, inject, model, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, model, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MaterialItem } from '../../../models/material-item';
 import { CommonModule } from '@angular/common';
@@ -20,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './materials-dialog.component.html',
   styleUrls: ['./materials-dialog.component.scss'],
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     CommonModule,
     FormsModule,
