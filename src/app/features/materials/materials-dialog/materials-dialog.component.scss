@@ -60,6 +60,13 @@
             ::ng-deep .mat-mdc-text-field-wrapper {
               height: 4rem;
             }
+
+            .mat-mdc-input-element {
+              color: var(--color-grey);
+              position: absolute;
+              bottom: 30px;
+              font-size: 1.6rem;
+            }
           }
 
           &.color-field {
@@ -124,6 +131,7 @@
       textarea {
         min-height: 13rem;
         resize: none;
+        font-size: 1.6rem;
       }
 
       .button-container {
@@ -169,3 +177,7 @@
     }
   }
 }
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled, ::ng-deep .mat-form-field-outline {
+  opacity: 0;
+  }

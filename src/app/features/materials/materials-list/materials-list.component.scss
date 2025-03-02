@@ -8,6 +8,12 @@
     background-color: white;
     height: 6rem;
   }
+
+  ::ng-deep .mdc-floating-label {
+    font-size: 15px;
+    font-style: italic;
+    color: var(--color-grey)!important;
+  }
 }
 
 table {
@@ -47,6 +53,7 @@ table {
 
   ::ng-deep tr:hover {
     background-color: var(--color-grey-light);
+    cursor: pointer;
     .mat-column-name {
       color: var(--color-blue);
       font-weight: var(--font-weight-bold);
