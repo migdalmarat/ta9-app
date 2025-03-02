@@ -53,6 +53,7 @@ table {
 
   ::ng-deep tr:hover {
     background-color: var(--color-grey-light);
+    cursor: pointer;
     .mat-column-name {
       color: var(--color-blue);
       font-weight: var(--font-weight-bold);
