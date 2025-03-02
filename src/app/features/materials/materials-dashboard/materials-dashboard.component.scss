@@ -1,0 +1,79 @@
+@import "../../../../assets/styles/base";
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3rem 7rem;
+  background-color: var(--color-grey-light);
+
+  .url-container {
+    display: flex;
+    height: 4.5rem;
+    width: 50rem;
+
+    .url-input {
+      display: inline-block;
+      width: 100%;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      align-items: center;
+      font-style: italic;
+
+      border: unset;
+    }
+
+    .mdc-button {
+      height: 4.5rem;
+      background-color: #007af9;
+      color: white;
+      font-size: 1.7rem;
+      border-radius: 1px;
+      padding: 10px 30px;
+    }
+  }
+
+  .content-container {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-size: 2rem;
+        color: var(--color-dark-blue);
+      }
+
+      .view-controls {
+        width: 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .view-button {
+          background: transparent;
+          border: none;
+
+          .mat-icon {
+            height: 2.5rem;
+          }
+        }
+
+        .add-button {
+          border: none;
+          background-color: transparent;
+          .mat-icon {
+            width: 6rem;
+            height: 6rem;
+
+            &:hover {
+              ::ng-deep path {
+                fill: #0e4f6e;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

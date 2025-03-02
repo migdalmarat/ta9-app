@@ -1,0 +1,10 @@
+<div class="card-list-container">
+  <div class="card-list">
+    @for ( item of store.items(); track item) {
+    <mat-card class="card-card" (click)="selectCard(item)">
+      <div class="color-square" [style.background-color]="item.color"></div>
+      <div class="card-name">{{ item.name }}</div>
+    </mat-card>
+    }
+  </div>
+</div>

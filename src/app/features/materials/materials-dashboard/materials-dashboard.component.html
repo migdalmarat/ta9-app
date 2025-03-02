@@ -1,0 +1,39 @@
+<div class="app-container">
+  <div class="url-container">
+    <input type="text" class="url-input" placeholder="URL" />
+    <button mat-flat-button class="go-button">GO</button>
+  </div>
+
+  <div class="content-container">
+    <div class="header">
+      <h2 class="title">Management Tool</h2>
+      <div class="view-controls">
+        <button
+          class="view-button grid-view-button"
+          [class.active]="viewMode === 'grid'"
+          (click)="setViewMode('grid')"
+        >
+          <mat-icon svgIcon="tiles-mode"></mat-icon>
+        </button>
+        <button
+          class="view-button list-view-button"
+          [class.active]="viewMode === 'list'"
+          (click)="setViewMode('list')"
+        >
+          <mat-icon svgIcon="list-mode"></mat-icon>
+        </button>
+        <button class="add-button" (click)="openCreateModal()">
+          <mat-icon svgIcon="add-new"></mat-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="view-container">
+      @if(viewMode === 'list') {
+      <app-materials-list></app-materials-list>
+      } @if (viewMode === 'grid') {
+      <app-materials-grid></app-materials-grid>
+      }
+    </div>
+  </div>
+</div>

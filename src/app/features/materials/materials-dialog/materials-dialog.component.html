@@ -1,0 +1,77 @@
+<div class="modal-container">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2 class="modal-title">Create New</h2>
+      <button mat-icon-button class="close-button" (click)="onClose()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <form [formGroup]="form" (ngSubmit)="onSave()">
+        <div class="form-row">
+          <div class="form-field name-field">
+            <label class="field-label">Name</label>
+            <mat-form-field appearance="outline" class="full-width name-field">
+              <input
+                matInput
+                formControlName="name"
+                placeholder="Corona Virus"
+              />
+            </mat-form-field>
+          </div>
+
+          <div class="form-field color-field">
+            <label class="field-label">Color</label>
+            <div class="color-picker-wrapper">
+              <div
+                class="color-selector"
+                [colorPicker]="f['color'].value"
+                [style.background]="f['color'].value"
+                (colorPickerChange)="onColorChange($event)"
+                [cpOutputFormat]="'hex'"
+                [cpPosition]="'bottom'"
+                [cpAlphaChannel]="'disabled'"
+              >
+                <mat-icon class="dropdown-icon">arrow_drop_down</mat-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="field-label">Tag Description</label>
+          <mat-form-field appearance="outline" class="full-width">
+            <textarea
+              matInput
+              formControlName="tagDescription"
+              placeholder="Covid-19"
+              rows="6"
+            ></textarea>
+          </mat-form-field>
+        </div>
+
+        <div class="button-container">
+          <button
+            mat-stroked-button
+            type="button"
+            class="cancel-button"
+            (click)="onClose()"
+          >
+            CANCEL
+          </button>
+
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit"
+            class="save-button"
+          >
+            <mat-icon>save</mat-icon>
+            SAVE
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
