@@ -67,7 +67,7 @@ export class MaterialsDialogComponent implements OnInit {
 
   onSave() {
     this.submitted = true;
-    // console.log('this.form.dirty : ',  this.form.dirty);
+
     if (this.form.invalid) {
       return;
     }
@@ -77,11 +77,13 @@ export class MaterialsDialogComponent implements OnInit {
       this.newItem.lastUpdate = new Date().toLocaleDateString("en-GB");
       this.store.updateItem(this.newItem);
     } else if (!this.data && this.form.dirty) {
+      console.log('new : ' );
       const date = new Date().toLocaleDateString("en-GB");;
       this.newItem.createdDate = date;
       this.newItem.lastUpdate = date;
       this.newItem.createdBy = 'Mark Shmechzur';
       this.newItem = { ...this.newItem, ...this.form.value };
+      this.store.addItem(this.newItem);
     }
     this.dialogRef.close();
 
