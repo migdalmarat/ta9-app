@@ -12,21 +12,15 @@ export class IconService {
   ) {
     this.iconRegistry.addSvgIcon(
       'add-new',
-      this.sanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/svg/add-new.svg'
-      )
+      this.sanitizer.bypassSecurityTrustResourceUrl('/svg/add-new.svg')
     );
     this.iconRegistry.addSvgIcon(
       'list-mode',
-      this.sanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/svg/list-mode.svg'
-      )
+      this.sanitizer.bypassSecurityTrustResourceUrl('/svg/list-mode.svg')
     );
     this.iconRegistry.addSvgIcon(
       'tiles-mode',
-      this.sanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/svg/tiles-mode.svg'
-      )
+      this.sanitizer.bypassSecurityTrustResourceUrl('/svg/tiles-mode.svg')
     );
   }
 }

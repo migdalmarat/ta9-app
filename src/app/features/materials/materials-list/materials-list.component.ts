@@ -76,11 +76,5 @@ export class MaterialListComponent {
     const dialogRef = this.dialog.open(MaterialsDialogComponent, {
       data: rowData,
     });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      if (result !== undefined) {
-        this.store.addItem(result);
-      }
-    });
   }
 }

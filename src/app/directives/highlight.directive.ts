@@ -11,6 +11,6 @@ export class HighlightDirective {
   }
 
   @HostListener('mouseleave') onMouseLeave() {
-    this.el.nativeElement.style.backgroundColor = '';
+    this.el.nativeElement.style.border = '';
   }
 }

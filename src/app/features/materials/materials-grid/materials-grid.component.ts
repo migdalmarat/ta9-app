@@ -1,8 +1,10 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { MaterialsStore } from '../materials.store';
 import { MatDialog } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.component';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { MaterialItem } from '../../../models/material-item';
 
 @Component({
   selector: 'app-materials-grid',
@@ -12,24 +14,19 @@ import { MaterialsDialogComponent } from '../materials-dialog/materials-dialog.c
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MaterialsGridComponent {
+export class MaterialsGridComponent implements OnInit{
   readonly store = inject(MaterialsStore);
   readonly dialog = inject(MatDialog);
-  constructor() {
+
+  ngOnInit(): void {
     if (this.store.items().length === 0) {
       this.store.loadItems();
     }
   }
 
-  selectCard(item: any): void {
+  selectCard(item: MaterialItem): void {
     const dialogRef = this.dialog.open(MaterialsDialogComponent, {
       data: item,
-    });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      if (result !== undefined) {
-        this.store.addItem(result);
-      }
     });
   }
 }

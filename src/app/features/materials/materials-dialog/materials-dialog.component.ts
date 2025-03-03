@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, model, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MaterialItem } from '../../../models/material-item';
-import { CommonModule } from '@angular/common';
 import {
   FormBuilder,
   FormGroup,
@@ -22,10 +21,8 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
-    CommonModule,
     FormsModule,
     ColorPickerModule,
-    CommonModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
@@ -70,25 +67,25 @@ export class MaterialsDialogComponent implements OnInit {
 
   onSave() {
     this.submitted = true;
-
+    // console.log('this.form.dirty : ',  this.form.dirty);
     if (this.form.invalid) {
       return;
     }
-
-    if (this.data) {
+    if (this.data && this.form.dirty) {
+      console.log('this.form.dirty : ',  this.form.dirty);
       this.newItem = { ...this.data, ...this.form.value };
       this.newItem.lastUpdate = new Date().toLocaleDateString("en-GB");
       this.store.updateItem(this.newItem);
-      this.dialogRef.close();
-      return;
+    } else if (!this.data && this.form.dirty) {
+      const date = new Date().toLocaleDateString("en-GB");;
+      this.newItem.createdDate = date;
+      this.newItem.lastUpdate = date;
+      this.newItem.createdBy = 'Mark Shmechzur';
+      this.newItem = { ...this.newItem, ...this.form.value };
     }
-    const date = new Date().toLocaleDateString("en-GB");;
-    this.newItem.createdDate = date;
-    this.newItem.lastUpdate = date;
-    this.newItem.createdBy = 'Mark Shmechzur';
-    this.newItem = { ...this.newItem, ...this.form.value };
-    this.store.addItem(this.newItem);
     this.dialogRef.close();
+
+    return;
   }
 
   resetForm(): void {
