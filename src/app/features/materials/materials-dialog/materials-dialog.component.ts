@@ -72,12 +72,10 @@ export class MaterialsDialogComponent implements OnInit {
       return;
     }
     if (this.data && this.form.dirty) {
-      console.log('this.form.dirty : ',  this.form.dirty);
       this.newItem = { ...this.data, ...this.form.value };
       this.newItem.lastUpdate = new Date().toLocaleDateString("en-GB");
       this.store.updateItem(this.newItem);
     } else if (!this.data && this.form.dirty) {
-      console.log('new : ' );
       const date = new Date().toLocaleDateString("en-GB");;
       this.newItem.createdDate = date;
       this.newItem.lastUpdate = date;
